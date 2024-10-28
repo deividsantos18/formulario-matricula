@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-light: #f67841;
+    --brand-mid: #f3541c;
+    --brand-dark: #e43a12;
+    --text-primary: #292524;
+    --text-secundary: #57534e;
+    --text-tertiary: #8f8881;
+    --text-highlight: #e43a12;
+    --surface-primary: #ffffff;
+    --surface-secondary: #fee7d6;
+    --surface-disabled: #e7e5e4;
+    --stroke-default: #d6d3d1;
+    --stroke-highlight: #f3541c;
+    --semantic-error: #dc2626;
+    --orange: #f9a474;
+    --yellow: #fedf6f;
+    --green: #c7d78d;
+    --blue: #b8cedc;
+    --violet: #c3b2e7;
+    --pink: #f682a5;
+
+    --poppins: "Poppins", sans-serif;
+}
+
+body {
+    color: var(--text-secundary);
+    font-family: var(--poppins);
+    margin: 64px;
+    width: 528px;
+}
+
+.voltar {
+    display: flex;
+}
+
+.cabecalho h1 {
+    line-height: 125%;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 24px 0 8px 0;
+    color: var(--text-primary);
+}
+
+.cabecalho p {
+    line-height: 150%;
+}
+
+fieldset {
+    border: none;
+    margin-top: 48px;
+}
+
+legend {
+    font-weight: 600;
+    line-height: 125%;
+    color: var(--text-primary);
+}
+
+legend,
+input,
+select, textarea {
+    margin-bottom: 24px;
+}
+
+label, .paragrafo {
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.paragrafo {
+    margin-bottom: 24px;
+}
+
+input,
+select,
+textarea {
+    width: 528px;
+    height: 48px;
+    padding: 12px 16px;
+    color: var(--text-primary);
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--stroke-highlight);
+    outline: none;
+}
+
+textarea {
+    width: 528px;
+    height: 120px;
+    resize: none;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.enviar-arquivo {
+    display: inline-block;
+    width: 528px;
+    height: 160px;
+    border: 2px dashed var(--stroke-default);
+    color: #a8a29e;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.enviar-arquivo img {
+    width: 48px;
+    height: 48px;
+    margin: 28px 240px 0px 240px;
+}
+
+.endereco {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.rua, .cidade {
+    grid-column: 1;
+}
+
+.numero, .estado {
+    grid-column: 2;
+}
+
+.rua input, .cidade input {
+    width: 332px;
+    height: 48px;
+}
+
+.numero input, .estado select {
+    width: 176px;
+    height: 48px;
+}
+
+#nome-responsavel {
+    margin-bottom: 0;
+}
+
+.turno {
+    display: flex;
+    gap: 16px;
+}
+
+.horario{
+    width: 256px;
+    height: 128px;
+    border: 2px solid var(--stroke-default);
+    display: flex;
+    position: relative;
+    border-radius: 8px;
+    margin-bottom: 48px;
+}
+
+.horario img {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+}
+
+.horario span {
+    position: absolute;
+    bottom: 16px;
+    left: 48%;
+    color: black;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.horario-input {
+    width: 24px;
+    height: 24px;
+    border: var(--stroke-default);
+    margin: 8px 0 0 8px;
+}
+
+.esportes {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 10px 0 48px 0;
+}
+
+.esporte-bloco {
+    width: 120px;
+    height: 128px;
+    border: 2px solid var(--stroke-default);
+    display: flex;
+    position: relative;
+    border-radius: 8px;
+}
+
+.esporte-bloco img {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    bottom: 40px;
+    left: 35px;
+}
+
+.esporte-bloco span {
+    position: absolute;
+    bottom: 20px;
+    left: 33px;
+    color: black;
+    line-height: 150%;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+.esporte-input {
+    width: 24px;
+    height: 24px;
+    border: var(--stroke-default);
+    margin: 8px 0 0 8px;
+}
+
+.declaracao-flex {
+    display: flex;
+}
+
+.declaracao {
+    width: 24px;
+    height: 24px;
+    padding: none;
+    color: var(--text-primary);
+    font-size: none;
+    border-radius: none;
+    margin-right: 10px;
+}
+
+.declaracao-txt {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 48px;
+}
+
+.declaracao-txt span {
+    color: var(--brand-dark);
+    font-weight: 500;
+}
+
+.botoes {
+    display: flex;
+    float: right;
+    gap: 16px;
+}
+
+input[type="button"] {
+    color: var(--text-highlight);
+    border: 1px solid var(--text-highlight);
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: var(--text-highlight);
+    border: 1px solid var(--text-highlight);
+}
+
+input[type="button"], input[type="submit"] {
+    width: 183px;
+    height: 48px;
+    font-weight: 700;
+}
+

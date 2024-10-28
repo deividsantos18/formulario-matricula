@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Matrícula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="voltar">
+        <img src="images/arrow-left-02.png" alt="">
+        Voltar
+    </div>
+    <header class="cabecalho">
+        <h1>Formulário de matrícula</h1>
+
+        <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+    </header>
+
+    <fieldset>
+        <legend>Informações da criança</legend>
+
+        <form action="" method="get">
+            <label for="nome">Nome completo</label><br>
+            <input type="text" name="nome" id="nome" required><br>
+
+            <label for="nascimento">Data de nascimento</label><br>
+            <input type="date" name="nascimento" id="nascimento"><br>
+
+            <label for="sexo">Sexo</label><br>
+            <select name="sexo" id="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select><br>
+
+            <label for="informacoes">Informações médicas</label><br>
+            <textarea name="informacoes" id="informacoes"></textarea><br>
+
+            <label for="foto-certidao">Certidão de nascimento</label><br>
+            <label for="foto-certidao" class="enviar-arquivo"><img src="images/cloud-upload.png" alt="">Clique aqui para
+                selecionar arquivos</label>
+            <input type="file" name="foto-certidao" id="foto-certidao">
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço residencial</legend>
+
+        <div class="cep">
+            <label for="cep">CEP</label><br>
+            <input type="number" name="cep" id="cep"><br>
+        </div>
+
+        <div class="endereco">
+            <div class="rua">
+                <label for="rua">Rua</label><br>
+                <input type="text" name="rua" id="rua" disabled>
+            </div>
+
+            <div class="numero">
+                <label for="numero">Número</label><br>
+                <input type="number" name="numero" id="numero" disabled><br>
+            </div>
+
+            <div class="cidade">
+                <label for="cidade">Cidade</label><br>
+                <input type="text" name="cidade" id="cidade" disabled><br>
+            </div>
+
+            <div class="estado">
+                <label for="estado">Estado</label><br>
+                <select name="estado" id="estado" disabled>
+                    <option value="SP">SP</option>
+                    <option value="AL">AL</option>
+                    <option value="RJ">RJ</option>
+                </select><br>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Informações do responsável</legend>
+
+        <label for="nome-responsavel">Nome do responsável</label>
+        <input type="text" name="nome-responsavel" id="nome-responsavel">
+        <p class="paragrafo">Principal responsável legal e contato de emergência.</p>
+
+        <label for="telefone">Telefone</label>
+        <input type="number" name="telefone" id="telefone">
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+    </fieldset>
+
+    <fieldset>
+        <legend>Opções de matrícula</legend>
+
+        <label for="turno">Selecione o turno de estudo</label>
+
+        <div class="turno">
+            <label for="manha" class="horario">
+                <input type="radio" name="turno" id="manha" class="horario-input">
+                <img src="images/sun-cloud-02.png" alt="">
+                <span>Manhã</span>
+            </label>
+            <label for="tarde" class="horario">
+                <input type="radio" name="turno" id="tarde" class="horario-input">
+                <img src="images/sun-02.png" alt="">
+                <span>Tarde</span>
+            </label>
+        </div>
+
+        <label for="esporte">Em qual esporte você gostaria de inscrever seu filho?</label>
+
+        <div class="esportes">
+            <label for="futebol" class="esporte-bloco">
+                <input type="radio" name="esporte" id="futebol" class="esporte-input">
+                <img src="images/football.png" alt="">
+                <span>Futebol</span>
+            </label>
+
+            <label for="basquete" class="esporte-bloco">
+                <input type="radio" name="esporte" id="basquete" class="esporte-input">
+                <img src="images/basketball-02.png" alt="">
+                <span>Basquete</span>
+            </label>
+
+            <label for="natacao" class="esporte-bloco">
+                <input type="radio" name="esporte" id="natacao" class="esporte-input">
+                <img src="images/swimming.png" alt="">
+                <span>Natação</span>
+            </label>
+
+            <label for="yoga" class="esporte-bloco">
+                <input type="radio" name="esporte" id="yoga" class="esporte-input">
+                <img src="images/yoga-02.png" alt="">
+                <span>Yoga</span>
+            </label>
+
+            <label for="volei" class="esporte-bloco">
+                <input type="radio" name="esporte" id="volei" class="esporte-input">
+                <img src="images/volleyball.png" alt="">
+                <span>Volei</span>
+            </label>
+
+            <label for="boxe" class="esporte-bloco">
+                <input type="radio" name="esporte" id="boxe" class="esporte-input">
+                <img src="images/boxing-glove-01.png" alt="">
+                <span>Boxe</span>
+            </label>
+        </div>
+    </fieldset>
+
+    <div class="declaracao-flex">
+        <input type="checkbox" name="declaracao" id="declaracao" class="declaracao">
+        <label for="declaracao" class="declaracao-txt">Declaro que li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span> da escola Estrela do Amanhã.</label>
+    </div>
+
+    <div class="botoes">
+        <input type="button" value="Salvar respostas" class="salvar">
+        <input type="submit" value="Fazer matrícula" class="matricular">
+    </div>
+
+    </form>
+</body>
+
+</html>
